@@ -1,6 +1,7 @@
 # SEJavaMini
 Learn Github version controlling tool and use it for JAVA mini project.
 Preparing to implement the code in git.
+Making changes in the code(editing the input details)
 1 	 	/*Attendance Manager*/
  2 	 	/*
  3 	 	Made by
@@ -65,6 +66,7 @@ Preparing to implement the code in git.
  62 	 	class Student extends User {
  63 	 	    
  64 	 	    int rollNo;
+            int GrNo;
  65 	 	    String dept;
  66 	 	    int attendance;
  67 	 	    
@@ -95,9 +97,9 @@ Preparing to implement the code in git.
  92 	 	          
  93 	 	        System.out.println("Enter Roll number:");
  94 	 	        rollNo = sc.nextInt();
- 95 	 	        sc.nextLine();
- 96 	 	
- 97 	 	    }
+              System.out.println("Enter GR number:");
+  	 	          GrNo = sc.nextInt();
+                }
  98 	 	    
  99 	 	    public int search(final int number, final String password) {
  100 	 	        if (this.rollNo == number && this.password.equals(password)) {
